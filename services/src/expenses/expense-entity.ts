@@ -13,4 +13,7 @@ export class ExpenseEntity {
 
   @Column()
   amount: number;
+
+  @Column({ length: 255 })
+  description: string;
 }
